@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
+    "dev": "wrangler dev", 
+    "dev:remote": "wrangler dev --remote", 
+    "start": "wrangler dev", 
     "test": "vitest"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "wrangler": "^3.60.3",
-    "vitest": "2.0.5"
+    "vitest": "2.0.5",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "hono": "^4.6.12"
   }
 }
